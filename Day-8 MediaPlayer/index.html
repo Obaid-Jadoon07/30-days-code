@@ -19,7 +19,7 @@
                 <img src="/images/logo.svg" alt="logo" />
                 <div class="main-items">
                     <div class="items-list">
-                        <div class="item active">
+                        <div class="item present">
                             <i class="fa-solid fa-house"></i>
                             <span>Home</span>
                         </div>
@@ -70,25 +70,6 @@
                     </div>
                 </div>
             </div>
-             <!-- responsive-nav -->
-             <!-- <div class="second-nav">
-                <img src="/images/smallLogo.svg" alt="smallLogo" />
-                <div class="icons-list">
-                    <div class="linked-icons">
-                        <div class="active-icon">
-                    <i class="fa-solid fa-house"></i>
-                </div>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-list"></i>
-                    <i class="fa-regular fa-bell"></i>
-                    <i class="fa-regular fa-gem"></i>
-                </div>
-                </div>
-                <div class="dp">
-                    <img src="/images/Avatar.png" alt="avatar" />
-                </div>
-
-            </div> -->
            
             <!-- end side of main container -->
             <div class="end">
@@ -372,26 +353,30 @@
 
                     </div>
                     <!-- top podcasts -->
-                    <div class="popular">
-                        <span class="popular-text">
-                            Top Podcasts
-                        </span>
-                        <div class="podcast">
-                            <div class="artist-card">
-                                <img src="/images/mindful.png" alt="mindful" />
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/images/mindful.png" class="d-block w-100" alt="mindful">
+                            <span class="small-text">Sarah Melody`</span>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/images/podcast.png" class="d-block w-100" alt="podcast">
                                 <span class="small-text">Sarah Melody`</span>
-                            </div>
-                            <div class="artist-card">
-                                <img src="/images/podcast.png" alt="podcast" />
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/images/techtalk.png" class="d-block w-100" alt="techtalk">
                                 <span class="small-text">Sarah Melody`</span>
-                            </div>
-                            <div class="artist-card">
-                                <img src="/images/techtalk.png" alt="techtalk" />
-                                <span class="small-text">Sarah Melody`</span>
-                            </div>
-
+                          </div>
                         </div>
-                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                     <!-- next in queue -->
                     <div class="popular">
                         <span class="popular-text">
