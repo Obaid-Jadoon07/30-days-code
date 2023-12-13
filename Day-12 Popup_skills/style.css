@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inter;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./Images/fourzerofour.svg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body .popover {
+  display: flex;
+  padding: 24px;
+  border-radius: 24px;
+  background: #FFF;
+  max-width: 1150px;
+  position: relative;
+  margin: auto;
+  z-index: 100;
+}
+body .popover .close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 13px;
+  z-index: 5;
+}
+body .popover .popover-start {
+  display: flex;
+  padding: 0px 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 48px 0px 0px 48px;
+  background: #FFF;
+  flex-basis: 50%;
+  flex-shrink: 10;
+}
+body .popover .popover-start .start-content {
+  display: flex;
+  padding: 24px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  border-radius: 24px;
+  -webkit-backdrop-filter: blur(36.5px);
+          backdrop-filter: blur(36.5px);
+}
+body .popover .popover-start .start-content .skill-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+body .popover .popover-start .start-content .skill-content .headings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body .popover .popover-start .start-content .skill-content .headings h1, body .popover .popover-start .start-content .skill-content .headings h2 {
+  color: #000;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+body .popover .popover-start .start-content .skill-content .headings h2 {
+  font-weight: 400;
+}
+body .popover .popover-start .start-content .skill-content .skills-para {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+body .popover .popover-start .start-content .skill-content .skills-para .para-one, body .popover .popover-start .start-content .skill-content .skills-para .para-two {
+  color: var(--Grey---Body-Text, #667085);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+body .popover .popover-start .start-content .skill-content .skills-para .para-two {
+  font-weight: 400;
+}
+body .popover .popover-start .start-content .mail-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+body .popover .popover-start .start-content .mail-section .mail-head {
+  color: #707070;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+body .popover .popover-start .start-content .mail-section .input-email {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+body .popover .popover-start .start-content .mail-section .input-email .email {
+  display: flex;
+  padding: 17px 16px 17px 20px;
+  align-items: center;
+  gap: 13px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid var(--Container-Border, #94A3B8);
+  color: var(--Container-Border, #94A3B8);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+body .popover .popover-start .start-content .mail-section .input-email .submit {
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  color: var(--White, #FFF);
+  text-align: right;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  background: #0071DC;
+  border: none;
+  flex-shrink: 0;
+}
+body .popover .popover-start .start-content .socials {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+body .popover .popover-end {
+  border-radius: 0px 12px 12px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-basis: 50%;
+  flex-shrink: 1;
+}
+
+@media only screen and (max-width: 1080px) {
+  .popover .popover-start {
+    padding: 0 18px;
+  }
+  .popover .popover-start .start-content {
+    gap: 18px;
+  }
+  .mail-section .input-email {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .popover-end {
+    display: none;
+  }
+  .popover-start {
+    flex-basis: 100% !important;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
+    <title>Pop-up</title>
+</head>
+
+<body>
+    <div id="popover" class="popover">
+        <span class="close" onclick="closePopover()">&times;</span>
+        <div class="popover-start">
+            <div class="start-content">
+                <img src="./images/Logo.svg" alt="logo" />
+                <div class="skill-content">
+                    <div class="headings">
+                        <h1>Unlock New Skills</h1>
+                        <h2> Get Your Free E-book!</h2>
+                    </div>
+                    <div class="skills-para">
+                        <span class="para-one">Are you looking to learn new skills and boost your knowledge?</span>
+                        <span class="para-two"> We're offering a free e-book packed with valuable insights and practical
+                            tips to help you achieve your goals.</span>
+                    </div>
+                </div>
+                <div class="mail-section">
+                    <span class="mail-head">Enter your email address to get the free e-book!</span>
+                    <div class="input-email">
+                        <input class="email" type="email" id="email" placeholder="loremipsum@example.com" />
+                        <button class="submit" type="submit" id="submit" class="btn btn-primary">Send me</button>
+                    </div>
+
+                </div>
+                <div class="socials">
+                    <a href="#"><img src="./images/fb.svg" alt="fb" /></a>
+                    <a href="#"><img src="./images/git.svg" alt="git" /></a>
+                    <a href="#"><img src="./images/insta.svg" alt="insta" /></a>
+                    <a href="#"><img src="./images/tweet.svg" alt="tweet" /> </a>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+        <div class="popover-end">
+            <img src="./images/book.svg" width="100%" height="100%" alt="book"/>
+
+        </div>
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Show the popover when the page is loaded
+        showPopover();
+    });
+    
+    function showPopover() {
+        var popover = document.getElementById("popover");
+        popover.style.display = "flex";
+    }
+    
+    function closePopover() {
+        var popover = document.getElementById("popover");
+        popover.style.display = "none";
+    }
+    
+</script>
+
+</body>
+
+</html>
